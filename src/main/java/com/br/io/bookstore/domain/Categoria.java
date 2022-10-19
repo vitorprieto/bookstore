@@ -25,6 +25,7 @@ public class Categoria implements Serializable {
     }
 
     public Categoria(Integer id, String nome, String descricao) {
+        super();
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
@@ -52,6 +53,14 @@ public class Categoria implements Serializable {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public List<Livro> getLivros() {
+        return livros;
+    }
+
+    public void setLivros(List<Livro> livros) {
+        this.livros = livros;
     }
 
     @Override

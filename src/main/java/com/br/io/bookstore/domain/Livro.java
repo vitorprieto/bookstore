@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
 public class Livro implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -24,6 +25,7 @@ public class Livro implements Serializable {
     }
 
     public Livro(Integer id, String titulo, String nome_autor, String texto, Categoria categoria) {
+        super();
         this.id = id;
         this.titulo = titulo;
         this.nome_autor = nome_autor;
